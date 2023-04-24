@@ -1,2 +1,2 @@
-export { default as SampleModel } from './SampleModel';
+export { default as UsersInvs } from './UsersInvs';
 export * from './connection';

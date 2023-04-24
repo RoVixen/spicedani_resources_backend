@@ -6,7 +6,6 @@ import {
   POSTGRES_USERNAME,
 } from "@@/config"
 import { Sequelize } from "sequelize"
-import SampleModel from "./SampleModel";
 
 // export const sequelize = new Sequelize(
 //   `postgres://${POSTGRES_USERNAME}:${POSTGRES_PASSWORD}@${POSTGRES_DIRECTION}:${POSTGRES_PORT}/${POSTGRES_DB_NAME}`
@@ -23,7 +22,7 @@ export const connectionPromise = (async () => {
     
     console.log("||||||||||  Postgres Sequelize connected  ||||||||||")
 
-    sequelize.sync()
+    sequelize.sync();
     
   } catch (error) {
     console.error("Unable to connect to Postgres with Sequelize:", error)

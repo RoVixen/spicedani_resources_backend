@@ -1,12 +1,12 @@
 import { Router } from "express"
 import sample from "./sample"
-import some_create from "./some_create"
-import some_read from "./some_read"
+import set_inv from "./set_inv"
+import get_inv from "./get_inv"
 
 const routes = Router()
 
 routes.use("/sample", sample)
-routes.use("/some_create", some_create)
-routes.use("/some_read", some_read)
+routes.use("/set_inv", set_inv)
+routes.use("/get_inv", get_inv)
 
 export default routes
