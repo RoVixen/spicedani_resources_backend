@@ -24,7 +24,10 @@
   },
   "scripts": {
     "watch": "concurrently \"tsc --watch\" \"nodemon build/index.js\"",
-    "dev": "yarn ts-node-dev ./src/index.ts"
+    "dev": "yarn ts-node-dev ./src/index.ts",
+    "prod": "pm2 start ecosystem.config.js",
+    "prod_stop": "pm2 stop ecosystem.config.js",
+    "prod_delete": "pm2 delete ecosystem.config.js"
   },
   "_moduleAliases": {
     "@@": "src"
