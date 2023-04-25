@@ -3,7 +3,7 @@ import { UsersInvs } from "@@/db"
 import { Router } from "express"
 const set_inv = Router()
 
-set_inv.get("/", async (req, res) => {
+set_inv.post("/", async (req, res) => {
   const uuid = req.body?.uuid
   const inventory = req.body?.inventory
 

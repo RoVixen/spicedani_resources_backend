@@ -5,7 +5,7 @@ const get_inv = Router()
 
 const EMPTY_INV = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-get_inv.get("/", async (req, res) => {
+get_inv.post("/", async (req, res) => {
   const uuid = req.body?.uuid
 
   if (typeof uuid != "string") {
