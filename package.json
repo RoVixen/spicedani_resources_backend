@@ -27,7 +27,9 @@
     "dev": "yarn ts-node-dev ./src/index.ts",
     "prod": "pm2 start ecosystem.config.js",
     "prod_stop": "pm2 stop ecosystem.config.js",
-    "prod_delete": "pm2 delete ecosystem.config.js"
+    "prod_delete": "pm2 delete ecosystem.config.js",
+    "prod_restart": "pm2 restart ecosystem.config.js",
+    "prod_reload": "pm2 reload ecosystem.config.js"
   },
   "_moduleAliases": {
     "@@": "src"
